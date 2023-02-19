@@ -17,8 +17,8 @@ RUN apt-get update \
 RUN mkdir /home/output
 
 # Copy the Python script into the container
-COPY word_count.py /app/
+COPY wordCount.py /app/
 
 # Set the working directory and the entrypoint
 WORKDIR /app
-ENTRYPOINT ["python3", "word_count.py"]
+ENTRYPOINT ["python3", "wordCount.py"]
